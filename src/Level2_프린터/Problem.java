@@ -20,6 +20,7 @@ class Solution {
     		queue.offer(priorities[i]);
     		queue_copy.offer(priorities_copy[i]);
     	}
+    	
     	int answer = 1;
     	while(queue.size()!=0) {
     		int max = Collections.max(queue);
@@ -35,7 +36,6 @@ class Solution {
     			queue.offer(num);
     			queue_copy.offer(num_copy);
     		}
-    		System.out.println("max : " + max + "  num : " + num);
     	}
         return answer;
     }
