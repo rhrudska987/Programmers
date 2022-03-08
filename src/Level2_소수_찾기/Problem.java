@@ -45,7 +45,7 @@ public class Problem {
 
 	public static void main(String[] args) {
 		Solution so = new Solution();
-		System.out.println(so.solution("17"));		
+		System.out.println(so.solution("017"));		
 	}
 
 }
