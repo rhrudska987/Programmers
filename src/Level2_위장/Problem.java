@@ -8,7 +8,7 @@ import java.util.Set;
 class Solution {
     public int solution(String[][] clothes) {
     	HashMap<String, String> map = new HashMap<>();
-    	HashSet<String> set = new HashSet<>();
+    	HashSet<String> set = new HashSet<>(); //옷 종류를 넣을 hashset
     	for(int i=0; i<clothes.length; i++) {
     		map.put(clothes[i][0], clothes[i][1]);
     		set.add(clothes[i][1]);
@@ -26,7 +26,7 @@ class Solution {
         	}
         	answer *= count;
         }
-        return answer-1;
+        return answer-1; //전부 안입는 경우는 없으니 -1
     }
 }
 
